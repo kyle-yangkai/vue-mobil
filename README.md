@@ -21,6 +21,17 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## 本项目重点
-1. 此项目仿写手机淘宝，主要解决主流手机兼容问题
-2. 
+## 仿写饿了么移动端
+#### 1. 应用的技术栈
+* vue全家桶（vue + vuex + vue-cli + vue-router）
+* axios
+* mint-ui
+* html
+* css
+* es5/es6
+
+#### 2. 需要解决的问题
+* 地址选择插件
+* 
+
+
