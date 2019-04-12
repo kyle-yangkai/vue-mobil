@@ -18,9 +18,6 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
 ## 仿写饿了么移动端
 #### 1. 应用的技术栈
 * vue全家桶（vue + vuex + vue-cli + vue-router）
@@ -31,7 +28,21 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * es5/es6
 
 #### 2. 需要解决的问题
+##### 1. 公共
+* 尺寸基准font-size的确认 —— 使用
+* resize使用
+* position新属性sticky
+* background-image新属性
+##### 2. 首页
 * 地址选择插件
-* 
+* 地址选择时的动画效果
+* 轮播插件 
+    —— 在mint-ui中swipe基础上加以改进，达到理想的效果
+    —— 其复写的css样式需要在全局style中，否则不会生效
+* 需要登录才能查看的页面（使用vuex管理）
+* 下拉加载
+* 商家简介组件化
+* svg
+
 
 

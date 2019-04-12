@@ -30,3 +30,20 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+window.onload = function(){
+  setStandard();
+}
+
+// 动态设置font-size以及缩放比例
+var setStandard = ()=>{
+  let scale = 1 / devicePixelRatio;
+  document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width, initial-scale='+ scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+  let _html =document.getElementsByTagName("html")[0];
+  let fs = _html.getBoundingClientRect().width/10;
+  _html.style.fontSize = fs + "px";
+}
+
+window.onresize = function (){
+  setStandard();
+}
+

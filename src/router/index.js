@@ -8,6 +8,7 @@ import discovery from '@/components/discovery'
 import mine from '@/components/mine'
 import orders from '@/components/orders'
 import homepage from '@/components/homepage'
+import shopPage from '@/components/shopPage'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
       ]
     },
     {
+      path: '/shopPage',
+      name: 'shopPage',
+      component: shopPage
+    },
+    {
       path: '/login',
       name: 'Login',
       component: Login
@@ -50,10 +56,10 @@ export default new Router({
     {
       path: '/test1',
       name: 'Test1',
-      component: Test1,
-      meta:{
-        needLogin: true
-      }
+      component: Test1
+      // meta:{
+      //   needLogin: true
+      // }
     }
   ]
 })
