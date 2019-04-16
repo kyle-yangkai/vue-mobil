@@ -43,6 +43,7 @@ npm run build --report
 * 下拉加载
 * 商家简介组件化
 * svg
+* 测试
 
 
 
