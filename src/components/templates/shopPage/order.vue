@@ -102,68 +102,7 @@
             </div>
             <div class="goodBox-right">
                 <div>
-                    <div style="height:100px">1</div>
-                    <div style="height:100px">12</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">15</div>
-                    <div style="height:100px">16</div>
-                    <div style="height:100px">17</div>
-                    <div style="height:100px">18</div>
+                    <menuFood />
                 </div>
             </div>
         </div>
@@ -171,6 +110,7 @@
 </template>
 
 <script>
+import menuFood from './menuFood';
 export default {
     name: 'order',
     data() {
@@ -179,7 +119,7 @@ export default {
         }
     },
   components: {
-
+      menuFood
   }
 }
 </script>

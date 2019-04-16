@@ -18,6 +18,10 @@ html,body{
   /* width: 100vw; */
   background: #f5f5f5;
 }
+p,div {
+  margin: 0;
+  padding: 0;
+}
 *::-webkit-scrollbar { 
   width: 0 !important 
 }

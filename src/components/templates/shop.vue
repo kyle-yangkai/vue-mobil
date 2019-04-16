@@ -1,5 +1,5 @@
 <template>
-    <div class="shopBox">
+    <div class="shopBox" @click="enterShop">
         <div class="shopContent">
             <div class="shopLogo">
                 <img :src="shopData.url" >
@@ -49,7 +49,7 @@
                 <div class="saleInf3-1">
                     <span v-for="(item,index) in shopData.saleInf" :key="index" v-show="saleShowNum>index"><span class="saleIcon" ref="colorChange">{{item.saleIcon}}</span><span>{{item.saleDetail}}</span></span>
                 </div>
-                <div class="saleInf3-2" @click="toggleSaleInf" v-if=" saleNum > defaultSaleNum">
+                <div class="saleInf3-2" @click="toggleSaleInf($event)" v-if=" saleNum > defaultSaleNum">
                     <span>{{saleNum}}个活动</span>
                     <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjOTk5IiBkPSJNNC41NzcgNS40MjNjLjc5Ljc3IDIuMDczLjc2NyAyLjg1NyAwbDQuMTItNC4wMjZDMTIuMzQ1LjYyNSAxMi4wOSAwIDEwLjk4NSAwSDEuMDI3Qy0uMDc3IDAtLjMzLjYzLjQ1NyAxLjM5N2w0LjEyIDQuMDI2eiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" >
                 </div>
@@ -109,11 +109,15 @@ export default {
         }
     },
     methods: {
-        toggleSaleInf: function () {
+        enterShop: function () {
+            this.$router.push("shopPage")
+        },
+        toggleSaleInf: function (e) {
             if(this.$refs.colorChange){
                 let _length = this.$refs.colorChange.length
                 this.$data.saleShowNum = (this.$data.saleShowNum === _length)?this.$data.defaultSaleNum:_length
             }
+            e.stopPropagation()
         }
     }
 }
