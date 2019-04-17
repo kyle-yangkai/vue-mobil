@@ -29,6 +29,14 @@ p,div {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
 body {
   font-size: 0.32rem;
 }
@@ -92,11 +100,5 @@ body {
 .mint-navbar .mint-tab-item .mint-tab-item-label {
   font-size: 0.4rem;
   line-height: 1.06667rem;
-}
-
-/* 复写img */
-img {
-  width: 100%;
-  height: 100%;
 }
 </style>
