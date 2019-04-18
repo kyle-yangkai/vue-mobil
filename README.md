@@ -37,6 +37,7 @@ npm run build --report
 * resize使用
 * position新属性sticky
 * background-image新属性
+* 加减商品可以分离成一个组件
 
 #### 2. 首页
 
@@ -50,3 +51,4 @@ npm run build --report
 * 商家简介组件化
 * svg
 * 动画效果
+* css 三角形，圆形

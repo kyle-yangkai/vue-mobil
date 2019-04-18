@@ -1,11 +1,38 @@
 <template>
     <div>
-        <div>
-            商家基本信息
-            <button @click="button">点击</button>
+        <div class="shopInfBox">
+            <div class="backImg">
+                <div class="img"></div>
+                <span @click="$router.go(-1)"></span>
+            </div>
+            <div class="logoImg">
+
+            </div>
+            <div class="shopInf">
+                <div class="shopInf-1">曼玲粥店（莲前西路店）</div>
+                <div class="shopInf-2">
+                    <span>评价4.7</span>
+                    <span>月售2103单</span>
+                    <span>蜂鸟转送约22分钟</span>
+                </div>
+                <div class="shopInf-3">
+                    <div>
+                        <span><small>共 ￥</small>17 <small>店铺</small></span>
+                        <span><small>领取</small></span>
+                    </div>
+                </div>
+                <div class="shopInf-4">
+                    <p>
+                        <span class="saleIcon">满减</span>
+                        <span>满25减15，满49减18，满79减21</span>
+                    </p>
+                    <span>5个优惠</span>
+                </div>
+                <div class="shopInf-5">公告：欢迎光临，用餐高峰期请提前下单，谢谢！</div>
+            </div>
         </div>
         
-
+        <!-- tab-navbar -->
         <mt-navbar v-model="selected" class="navbar">
             <div>
                 <mt-tab-item id="1">点餐</mt-tab-item>
@@ -36,15 +63,15 @@
                 <!-- 购物车图标及简要信息 -->
                 <div class="shopCartBox">
                     <div class="emptyShadow" v-show="!(foodNum>0)"></div>
-                    <div :class="(foodNum>0)?'shopCart':'shopCart empty'">
+                    <div class="shopCart empty">
                         <span v-show="foodNum>0">{{foodNum}}</span>
                     </div>
                     <div class="shopCartBox-middle">
-                        <span :class="(foodNum>0)?'middle-1':''">￥8.0</span>
+                        <span v-if="!(foodNum>0)">未选购商品</span>
+                        <span class="middle-1" v-if="foodNum>0">￥8.0</span>
                         <span class="middle-2">另需配送费3.1元</span>
                     </div>
                     <router-link to="" class="send">
-                        
                         <span @click="addFood">去结算</span>
                     </router-link>
                 </div>
@@ -87,7 +114,7 @@ export default {
         this.$data.foodNum++;
         console.log(this.foodNum)
         var _shopCart =document.getElementsByClassName("shopCart")
-        // _shopCart[0].classList.remove("empty")
+        _shopCart[0].classList.remove("empty")
         _shopCart[0].classList.add("addFood")
         setTimeout(function(){
             _shopCart[0].classList.remove("addFood")
@@ -98,6 +125,193 @@ export default {
 </script>
 
 <style scope>
+.shopInfBox {
+    position: relative;
+    background: #fff;
+}
+.backImg {
+    height: 2.66667rem;
+    position: relative;
+    background-image: url("https://fuss10.elemecdn.com/f/b9/be9c57bc2457721211700239f3c90png.png?imageMogr/format/webp/thumbnail/750x/");
+}
+.backImg>.img {
+    height: 100%;
+    background-image: linear-gradient(0deg,hsla(0,0%,100%,0),rgba(0,0,0,.5));
+}
+.backImg>span {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.3rem;
+    transform: rotate(45deg);
+    width:0.32rem;
+    height: 0.32rem;
+    display: block;
+    margin: 0.13333rem 0 0 0.13333rem;
+    border-bottom: 0.05333rem solid #fff;
+    border-left: 0.05333rem solid #fff;
+}
+.logoImg {
+    width: 2rem;
+    height:2rem;
+    position: absolute;
+    background: #444;
+    /* border: 0.1rem solid #000; */
+    top:1.1rem;
+    left:4rem;
+}
+.shopInf {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    padding: 0.8rem 0 0;
+    font-size: 0.29333rem;
+    color: #666;
+}
+.shopInf-1 {
+    position: relative;
+    width: 7.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.546667rem;
+    font-weight: 700;
+    color: #333;
+}
+.shopInf-1::after {
+    content: "";
+    border-style: solid;
+    border-width: .146667rem 0 .146667rem .173333rem;
+    border-color: transparent transparent transparent rgba(0,0,0,.67);
+    position: absolute;
+    right: 0rem;
+    top: .213333rem;
+}
+.shopInf-2 {
+    width: 7.2rem;
+    white-space: nowrap;
+    height: 0.32rem;
+    margin-top: 0.17333rem;
+    line-height: 0.32rem;
+}
+.shopInf-2>span {
+    padding-right: 0.1rem;
+}
+.shopInf-2>span:last-child {
+    padding-right: 0;
+}
+.shopInf-3 {
+    margin: 0.21333rem auto 0;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.42667rem;
+}
+.shopInf-3>div {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: .2rem;
+    height: .64rem;
+    line-height: 0.64rem;
+    width: 3.84rem;
+    background: #fff4f4;
+    color: #5c1603;
+    font-weight: 700;
+}
+.shopInf-3>div::before {
+    content: '';
+    position: absolute;
+    right: .933333rem;
+    bottom:0;
+    width: .133333rem;
+    height: .066667rem;
+    background: #fff;
+    border-radius: .133333rem .133333rem 0 0;
+}
+.shopInf-3>div::after {
+    content: '';
+    position: absolute;
+    right: .933333rem;
+    top:0;
+    width: .133333rem;
+    height: .066667rem;
+    background: #fff;
+    border-radius: 0 0 .133333rem .133333rem;
+}
+.shopInf-3>div>span:first-child {
+    display: block;
+    flex: 1;
+}
+.shopInf-3>div>span:last-child {
+    display: block;
+    width: 0.93333rem;
+}
+.shopInf-3>div small {
+    font-weight: 400;
+    font-size: 0.29333rem;
+}
+.shopInf-4 {
+    width: 8rem;
+    margin: 0.32rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.shopInf-4>p {
+    display: block;
+    text-align: left;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+.shopInf-4 .saleIcon {
+    padding: 0 0.12rem;
+    margin-right: 0.16rem;
+    font-size: 0.24rem;
+    display: inline-block;
+    height: 0.34667rem;
+    background: #f07373;
+    color: #fff;
+}
+.shopInf-4>span {
+    padding-right: 0.29333rem;
+    width:1.62667rem;
+    flex:none;
+    position: relative;
+    text-align: right;
+    color: #999;
+}
+.shopInf-4>span::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: .106667rem .093333rem 0;
+    border-width: 1.066667vw .933333vw 0;
+    border-color: #999 transparent transparent;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+}
+.shopInf-5 {
+    width:8rem;
+    margin: 0.22667rem auto 0.26667rem;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+}
 .navbar {
     position: sticky;
     position: -webkit-sticky; 

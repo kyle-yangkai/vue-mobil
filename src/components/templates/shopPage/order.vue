@@ -8,102 +8,88 @@
                 <p>商家推荐</p>
             </div>
             <div class="recommend-2">
-                <div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                    <div class="recommendFoodBox">
-
-                    </div>
-                </div>
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
+                <recommendedFood />
             </div>
         </div>
         <div class="goodBox">
             <div class="goodBox-left">
-                <div>
-                    <div style="height:100px">1</div>
-                    <div style="height:100px">12</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">13</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">14</div>
-                    <div style="height:100px">15</div>
-                    <div style="height:100px">16</div>
-                    <div style="height:100px">17</div>
-                    <div style="height:100px">18</div>
-                </div>
+                <div style="height:100px">1</div>
+                <div style="height:100px">12</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">13</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">14</div>
+                <div style="height:100px">15</div>
+                <div style="height:100px">16</div>
+                <div style="height:100px">17</div>
+                <div style="height:100px">18</div>
             </div>
             <div class="goodBox-right">
-                <div>
-                    <menuFood />
-                </div>
+                <menuFood />
             </div>
         </div>
     </div>
@@ -111,6 +97,7 @@
 
 <script>
 import menuFood from './menuFood';
+import recommendedFood from './recommendedFood';
 export default {
     name: 'order',
     data() {
@@ -119,7 +106,8 @@ export default {
         }
     },
   components: {
-      menuFood
+      menuFood,
+      recommendedFood
   }
 }
 </script>
@@ -152,8 +140,8 @@ export default {
     overflow-x: scroll;
     display: flex;
 }
-.recommend-2>div {
-    display: flex;
+.recommend-2>div:first-child {
+    margin-left: 0.42667rem;
 }
 .recommendFoodBox {
     height: 3rem;
